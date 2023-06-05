@@ -33,5 +33,9 @@ public class DefaultCountingOutRhymer {
             return ERROR_CODE;
         return numbers[total--];
     }
+    
+    public int getTotal() {
+		return total;
+	}
 
 }
