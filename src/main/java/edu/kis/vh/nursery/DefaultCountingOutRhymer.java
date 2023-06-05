@@ -7,7 +7,7 @@ public class DefaultCountingOutRhymer {
     private int ERROR_CODE = -1;
     
 	private int[] numbers = new int[RHYMER_SIZE];
-    public int total = EMPTY_RHYMER_SIZE;
+    private int total = EMPTY_RHYMER_SIZE;
 
     public void countIn(int in) {
         if (!isFull())
@@ -33,5 +33,9 @@ public class DefaultCountingOutRhymer {
             return ERROR_CODE;
         return numbers[total--];
     }
+    
+    public int getTotal() {
+		return total;
+	}
 
 }
