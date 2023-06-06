@@ -6,11 +6,11 @@ package edu.kis.vh.nursery;
  */
 public class DefaultCountingOutRhymer {
 
-    private int RHYMER_SIZE = 12;
-    private int EMPTY_RHYMER_SIZE = -1;
-    private int ERROR_CODE = -1;
+    private static final int RHYMER_SIZE = 12;
+    private static final int EMPTY_RHYMER_SIZE = -1;
+    private static final int ERROR_CODE = -1;
     
-	private int[] numbers = new int[RHYMER_SIZE];
+	private final int[] numbers = new int[RHYMER_SIZE];
     private int total = EMPTY_RHYMER_SIZE;
 
     /** 
